@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  
+  <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/RejEstilos.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.tzineClock.css" />
+  
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.tzineClock.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery.timer.js"></script>
+  <script type="text/javascript" src="js/demo.js"></script>
+   
+</head>
+<body>
+
+<div data-role="page" id="tempo">
+<div data-role="header" style="overflow:hidden;">
+    <a href="index.html" data-ajax="false" data-icon="arrow-l">Atras</a>
+    <h1>Temporizador</h1>
+    </div>
+
+    <div data-role="content">
+    <span style="font-size:40px" id="countdown">05:00:00</span>
+        <div data-role="controlgroup" data-type="horizontal">
+        <input type='button' value='Play/Pause' onclick='Example2.Timer.toggle();' />
+        <input type='button' value='Stop/Reset' onclick='Example2.resetCountdown();' />
+        </div>
+        <form id="example2form">
+        <input type='text' name='startTime' value='300' style='width:30px;' />
+        </form>
+    
+    <a href="#instrucciones" data-rel="popup" data-role="button" data-icon="info" data-inline="true" data-transition="pop">Instrucciones</a>
+<div data-role="popup" id="instrucciones">
+    <p>1 equivale a 1 segundo</p>
+    <p>60 equivale a 1 minuto</p>
+</div>
+
+    </div>
+    </div>
+    
+    
+<div data-role="page" id="CA">
+
+	<div data-role="header">
+        <a href="#reloj" data-icon="arrow-l">Atras</a>
+		<h1>Cronometro</h1>
+	</div>
+
+<!-- Start of second page -->
+<div data-role="page" id="CA">
+
+	<div data-role="header">
+		<h1>Bar</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+		<p><a href="#foo">Back to foo</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div>
+</body>
+</html>
